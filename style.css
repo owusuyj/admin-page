@@ -1,14 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Arial Narrow Bold'; 
+  font-family: "Arial Narrow Bold";
 }
 
 li {
   display: flex;
   gap: 1rem;
-  justify-content: left;
-  list-style: none;
   padding: none;
   font-size: xx-large;
 }
@@ -16,9 +14,8 @@ li {
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1.2fr 6fr;
 }
-
 
 .sidebar {
   background-color: #fae8ff;
@@ -27,12 +24,14 @@ body {
   grid-row: span 2;
   flex-direction: column;
   gap: 2rem;
-  height: 100vh
+  height: 100vh;
 }
 
 .header {
   background-color: #bfdbfe;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 main {
@@ -66,13 +65,30 @@ li > svg {
   height: 36px;
 }
 
+.svg-large {
+  width: 68px;
+  height: 68px;
+}
+
 .header-top {
   display: flex;
   height: 50%;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
+  padding: 0 4rem;
+  gap: 2rem;
 }
 
-.header-top:nth-child(2) {
-  flex-basis: 3;
+.search-style {
+  background-color: rgb(241, 240, 234);
+  border-radius: 16px;
+  border: 0;
+  width: max(22rem, 100px);
+  height: 27px;
+}
+
+.header-last-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
